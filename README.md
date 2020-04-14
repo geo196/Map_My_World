@@ -33,7 +33,13 @@ The project is organized in the following directories:
 |   |   |   └── package.xml
 |   |   ├── CMakeLists.txt
 |   |   └── where_am_I.rviz
-|   └── 
+|   └── teleop_twist_keyboard
+|   |   └── CHANGELOG.rst
+|   |   │   ├── CHANGELOG.rst
+|   |   │   ├── CMakeLists.txt
+|   |   │   ├── README.md
+|   |   │   ├── package.xml
+|   |   |   └── teleop_twist_keyboard.py
 └── README.md 
 ```
 
