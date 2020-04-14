@@ -36,3 +36,33 @@ The project is organized in the following directories:
 |   └── 
 └── README.md 
 ```
+
+3. How to build the project
+
+  - Clone this repository into the workspace.
+  - Build the project using the following commands:
+  ```
+  $ cd /home/workspace/
+  $ catkin_make
+  $ source devel/setup.bash
+  ```
+  - Execute the project using the following commands:
+  ```
+  $ roslaunch my_robot world.launch 
+  $ roslaunch myamcl amcl.launch
+  ```
+  - For RVIZ Integration: 
+
+   `Select: Global Options-> Fixed Frame-> Map`
+
+   `Add Robot Model.`
+   
+   `Add Camera. Then Select Image Topic: /camera/rgb/image_raw.`
+   
+   `Add LaserScan. Then Select Image Topic: /scan.`
+   
+   `Add Maps. Then Select Image Topic: /map. Check other maps such as /move_base/local_costmap/costmap /move_base/global_costmap/costmap`
+   
+   `Add PoseArrow. Then Select Topic: /pointcloud.`
+
+  - Additionally, move commands can be sent to robot through the teleop package. To start teleop, run the following command in the terminal: ` teleop_twist_keyboard teleop_twist_keyboard.py `
