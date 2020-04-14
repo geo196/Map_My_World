@@ -1,9 +1,12 @@
 UDACITY Project 2: Where am I?
 
 1. Project Overview
+
 This is the Where Am I? localization project of the Robotics Software Engineer Nanodegree program offered by Udacity. In this project, we utilize ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
 
+
 2. Description
+
 The project is organized in the following directories:
 ```                                                      
 ── where_am_I
@@ -41,6 +44,7 @@ The project is organized in the following directories:
    |   └── where_am_I.rviz
    └── README.md 
 ```
+
 
 3. How to build the project
 
