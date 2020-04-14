@@ -7,8 +7,8 @@ This is the Where Am I? localization project of the Robotics Software Engineer N
 The project is organized in the following directories:
 ```                                                      
 ── where_am_I
-   └── src
-   |   ├── my_robot
+   ├── src
+   |    my_robot
    |   |   ├── config
    |   │   │   ├── base_local_planner_params.yaml
    |   │   │   ├── costmap_common_params.yaml
