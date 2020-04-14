@@ -6,41 +6,40 @@ This is the Where Am I? localization project of the Robotics Software Engineer N
 2. Description
 The project is organized in the following directories:
 ```                                                      
-├── where_am_I
-|   ├── src
-|   |   ├── my_robot
-|   |   |   ├── config
-|   |   │   │   ├── base_local_planner_params.yaml
-|   |   │   │   ├── costmap_common_params.yaml
-|   |   │   │   ├── global_costmap_params.yaml
-|   |   │   │   ├── local_costmap_params.yaml
-|   |   │   │   └── __MACOSX
-|   |   │   ├── launch
-|   |   |   |   ├── amcl.launch
-|   |   │   │   ├── robot_description.launch
-|   |   │   │   └── world.launch
-|   |   │   ├── maps
-|   |   │   │   ├── map.pgm
-|   |   │   │   └── map.yaml
-|   |   │   ├── meshes
-|   |   │   │   └── hokuyo.dae
-|   |   │   ├── urdf
-|   |   │   │   ├── my_robot.gazebo
-|   |   │   │   └── my_robot.xacro
-|   |   |   ├── world
-|   |   │   |   └── georgios.world
-|   |   │   ├── CMakeLists.txt
-|   |   |   └── package.xml
-|   |   ├── CMakeLists.txt
-|   |   └── where_am_I.rviz
-|   └── teleop_twist_keyboard
-|   |   └── CHANGELOG.rst
-|   |   │   ├── CHANGELOG.rst
-|   |   │   ├── CMakeLists.txt
-|   |   │   ├── README.md
-|   |   │   ├── package.xml
-|   |   |   └── teleop_twist_keyboard.py
-└── README.md 
+── where_am_I
+   └── src
+   |   ├── my_robot
+   |   |   ├── config
+   |   │   │   ├── base_local_planner_params.yaml
+   |   │   │   ├── costmap_common_params.yaml
+   |   │   │   ├── global_costmap_params.yaml
+   |   │   │   ├── local_costmap_params.yaml
+   |   │   │   └── __MACOSX
+   |   │   ├── launch
+   |   |   |   ├── amcl.launch
+   |   │   │   ├── robot_description.launch
+   |   │   │   └── world.launch
+   |   │   ├── maps
+   |   │   │   ├── map.pgm
+   |   │   │   └── map.yaml
+   |   │   ├── meshes
+   |   │   │   └── hokuyo.dae
+   |   │   ├── urdf
+   |   │   │   ├── my_robot.gazebo
+   |   │   │   └── my_robot.xacro
+   |   |   ├── world
+   |   │   |   └── georgios.world
+   |   │   ├── CMakeLists.txt
+   |   |   └── package.xml
+   |   ├── teleop_twist_keyboard
+   │   |   ├── CHANGELOG.rst
+   │   |   ├── CMakeLists.txt
+   │   |   ├── README.md
+   │   |   ├── package.xml
+   |   |   └── teleop_twist_keyboard.py
+   |   ├── CMakeLists.txt
+   |   └── where_am_I.rviz
+   └── README.md 
 ```
 
 3. How to build the project
