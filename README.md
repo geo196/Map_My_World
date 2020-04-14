@@ -39,19 +39,19 @@ The project is organized in the following directories:
 
 3. How to build the project
 
-  1. Clone this repository into the workspace.
-  2. Build the project using the following commands:
+  - Clone this repository into the workspace.
+  - Build the project using the following commands:
   ```
   $ cd /home/workspace/
   $ catkin_make
   $ source devel/setup.bash
   ```
-  3. Execute the project using the following commands:
+  - Execute the project using the following commands:
   ```
   $ roslaunch my_robot world.launch 
   $ roslaunch myamcl amcl.launch
   ```
-  4. For RVIZ Integration: 
+  - For RVIZ Integration: 
 
    `Select: Global Options-> Fixed Frame-> Map`
 
@@ -65,4 +65,4 @@ The project is organized in the following directories:
    
    `Add PoseArrow. Then Select Topic: /pointcloud.`
 
-  6. Additionally, move commands can be sent to robot through the teleop package. To start teleop, run the following command in the terminal: ` teleop_twist_keyboard teleop_twist_keyboard.py `
+  - Additionally, move commands can be sent to robot through the teleop package. To start teleop, run the following command in the terminal: ` teleop_twist_keyboard teleop_twist_keyboard.py `
