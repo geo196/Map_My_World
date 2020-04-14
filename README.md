@@ -52,7 +52,7 @@ The project is organized in the following directories:
   $ catkin_make
   $ source devel/setup.bash
   ```
-  - Execute the project using the following commands:
+  - Execute the project using the following commands in different terminals:
   ```
   $ roslaunch my_robot world.launch 
   $ roslaunch myamcl amcl.launch
@@ -71,4 +71,4 @@ The project is organized in the following directories:
    
    `Add PoseArrow. Then Select Topic: /pointcloud.`
 
-  - Additionally, move commands can be sent to robot through the teleop package. To start teleop, run the following command in the terminal: ` teleop_twist_keyboard teleop_twist_keyboard.py `
+  - Additionally, move commands can be sent to robot through the teleop package. To start teleop, run the following command in a new terminal: ` rosrun teleop_twist_keyboard teleop_twist_keyboard.py `
