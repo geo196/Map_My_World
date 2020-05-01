@@ -58,7 +58,7 @@
 	  <!-- Occupancy Grid -->
 	  <param name="Grid/FromDepth" type="string" value="false"/>
 	  
-	  
+	
     </node>
   </group>
 </launch>
