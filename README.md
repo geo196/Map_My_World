@@ -1,8 +1,11 @@
-UDACITY Project 2: Where am I?
+UDACITY Project 3: Map my world
 
 1. Project Overview
 
-This is the Where Am I? localization project of the Robotics Software Engineer Nanodegree program offered by Udacity. In this project, we utilize ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
+This is the Map My Worls project of the Robotics Software Engineer Nanodegree program offered by Udacity. In this project, we will create a 2D occupancy grid and 3D octomap from a simulated environment using the robot from the 2nd Project of the program  with the RTAB-Map package. 
+
+The second project stated here and on which this project is based, is the "where am I?"
+(https://github.com/geo196/where_am_I.git)
 
 
 2. Description
@@ -20,6 +23,8 @@ The project is organized in the following directories:
    |   │   │   └── __MACOSX
    |   │   ├── launch
    |   |   |   ├── amcl.launch
+   |   |   |   ├── localization.launch
+   |   |   |   ├── mapping.launch
    |   │   │   ├── robot_description.launch
    |   │   │   └── world.launch
    |   │   ├── maps
@@ -58,20 +63,16 @@ The project is organized in the following directories:
   - Execute the project using the following commands in different terminals:
   ```
   $ roslaunch my_robot world.launch 
-  $ roslaunch myamcl amcl.launch
+  $ roslaunch my_robot localization.launch
+  $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
   ```
-  - For RVIZ Integration: 
+  The teleop package is used to send move commands to the robot
+  - For the RVIZ is used the same configuration with the 2nd project: 
+      where_am_I.rviz
+  - A database viewer is also used for the database analysis. In a new terminal:
+  `rtabmap-databaseViewer ~/.ros/rtabmap.db`
 
-   `Select: Global Options-> Fixed Frame-> Map`
+    in popup window: use the database parameters: yes
+    View -> Constraint View
+    View -> Graph View
 
-   `Add Robot Model.`
-   
-   `Add Camera. Then Select Image Topic: /camera/rgb/image_raw.`
-   
-   `Add LaserScan. Then Select Image Topic: /scan.`
-   
-   `Add Maps. Then Select Image Topic: /map. Check other maps such as /move_base/local_costmap/costmap /move_base/global_costmap/costmap`
-   
-   `Add PoseArrow. Then Select Topic: /pointcloud.`
-
-  - Additionally, move commands can be sent to robot through the teleop package. To start teleop, run the following command in a new terminal: ` rosrun teleop_twist_keyboard teleop_twist_keyboard.py `
