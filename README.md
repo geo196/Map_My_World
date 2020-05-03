@@ -70,9 +70,10 @@ The project is organized in the following directories:
   - For the RVIZ is used the same configuration with the 2nd project: 
       where_am_I.rviz
   - A database viewer is also used for the database analysis. In a new terminal:
-  `rtabmap-databaseViewer ~/.ros/rtabmap.db`
-
-    in popup window: use the database parameters: yes
-    View -> Constraint View
-    View -> Graph View
+  ```rtabmap-databaseViewer ~/.ros/rtabmap.db```
+  ```
+  in popup window: use the database parameters: yes.
+  View -> Constraint View.
+  View -> Graph View.
+  ```
 
