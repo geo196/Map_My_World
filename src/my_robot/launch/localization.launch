@@ -69,7 +69,7 @@
 
       <!-- Loop Closure Constraint -->
       <!-- 0=Visual, 1=ICP (1 requires scan)-->
-      <param name="Reg/Strategy" type="string" value="1"/>
+      <param name="Reg/Strategy" type="string" value="0"/>
 
       <!-- ICP parameters -->
       <param name="Icp/VoxelSize"                 type="string" value="0.05"/>
@@ -81,7 +81,7 @@
 
       <!-- Set to false to avoid saving data when robot is not moving -->
       <!-- param name="Mem/NotLinkedNodesKept" type="string" value="false"/ -->
-      <param name="Mem/IncrementalMemory" type="string" value="false"/>
+      <param name="Mem/IncrementalMemory" type="string" value="true"/>
 	  
       <!-- Occupancy Grid -->
       <param name="Grid/FromDepth" type="string" value="false"/>

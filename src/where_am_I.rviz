@@ -5,7 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /LaserScan1/Status1
-        - /global_costMap1/Status1
       Splitter Ratio: 0.5
     Tree Height: 364
   - Class: rviz/Selection
@@ -65,6 +64,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        camera_link_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         chassis:
           Alpha: 1
           Show Axes: false
@@ -116,8 +119,6 @@ Visualization Manager:
         RobotModel: true
         TF: true
         Value: true
-        global_costMap: true
-        local_costMap: true
       Zoom Factor: 1
     - Alpha: 1
       Autocompute Intensity Bounds: true
@@ -175,32 +176,14 @@ Visualization Manager:
       Unreliable: false
       Use Timestamp: false
       Value: true
-    - Alpha: 0.699999988
-      Class: rviz/Map
-      Color Scheme: costmap
-      Draw Behind: false
-      Enabled: true
-      Name: global_costMap
-      Topic: /move_base/global_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
-    - Alpha: 0.699999988
-      Class: rviz/Map
-      Color Scheme: costmap
-      Draw Behind: false
-      Enabled: true
-      Name: local_costMap
-      Topic: /move_base/local_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
     - Class: rviz/TF
       Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: true
         camera:
+          Value: true
+        camera_link_optical:
           Value: true
         chassis:
           Value: true
@@ -223,18 +206,18 @@ Visualization Manager:
       Show Names: true
       Tree:
         map:
-          {}
-        odom:
-          robot_footprint:
-            chassis:
-              camera:
-                {}
-              hokuyo:
-                {}
-              left_wheel:
-                {}
-              right_wheel:
-                {}
+          odom:
+            robot_footprint:
+              chassis:
+                camera:
+                  camera_link_optical:
+                    {}
+                hokuyo:
+                  {}
+                left_wheel:
+                  {}
+                right_wheel:
+                  {}
       Update Interval: 0
       Value: true
     - Alpha: 1
