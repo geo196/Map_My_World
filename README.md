@@ -76,4 +76,8 @@ The project is organized in the following directories:
   View -> Constraint View.
   View -> Graph View.
   ```
-
+  
+  The rtabmap db file is available under the following link:
+  ```
+  https://drive.google.com/file/d/1EJ9g_c-RtNN_z-Oy0ChcU2-GAJmiZQNU/view?usp=sharing
+  ```
